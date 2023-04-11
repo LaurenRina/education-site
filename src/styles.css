@@ -1,0 +1,173 @@
+body {
+  display: block;
+  width: 100%;
+  font-family: sans-serif;
+  margin: auto;
+}
+
+a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0056d2;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+  padding: 25px 30px;
+}
+
+nav > ul > li {
+  font-size: 18px;
+  padding: 0px 30px;
+}
+
+section {
+  display: block;
+  position: relative;
+}
+
+footer {
+  display: block;
+  margin: auto;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  padding: 0px 10px;
+}
+
+.hero-image {
+  height: 400px;
+  background-image: url("images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  display: block;
+  text-align: center;
+  height: 87%;
+  width: 85%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  padding-top: 55px;
+  margin: auto;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 64px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.button {
+  display: block;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fff;
+  background-color: #0056d2;
+  box-shadow: inset 0 0 0 1px #0056d2;
+  border: 2px solid #0056d2;
+  border-radius: 4px;
+  text-transform: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  max-width: 320px;
+  padding: 12px 32px;
+  margin: auto;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.social-media-list-item img {
+  width: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  nav > ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 25px;
+  }
+
+  nav > ul > li {
+    font-size: 16px;
+    padding: 0px 20px;
+  }
+
+  .hero-image {
+    height: 450px;
+  }
+
+  .hero-text {
+    padding-top: 45px;
+  }
+
+  .hero h1 {
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .hero p {
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 40px;
+  }
+
+  .button {
+    display: block;
+    position: absolute;
+    bottom: 45px;
+    font-size: 16px;
+    padding: 15px 32px;
+  }
+
+  footer li {
+    padding: 0px 7px;
+  }
+}
